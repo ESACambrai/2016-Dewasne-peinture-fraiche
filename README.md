@@ -13,3 +13,6 @@ Le flexbox en css permet de créer des mises ne forme complexes :
 
 
 accordéon : http://www.armagost.com/zaccordion/
+
+
+gestion du tactile : http://hammerjs.github.io
