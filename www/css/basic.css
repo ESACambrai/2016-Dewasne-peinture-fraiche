@@ -1,0 +1,87 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+header, section, footer, aside, nav, article, figure, audio, video, canvas  { display:block; }
+
+body {
+
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:white;
+    background:url("../img/grid.png") repeat center center scroll;
+	font-family:'jean_dewasneregular', Helvetica, sans-serif;
+    font-size:18px;
+    margin:0px;
+    padding:0px;
+}
+
+@font-face {
+    font-family: 'jean_dewasneregular';
+    src: url('../fonts/jd-webfont.eot');
+    src: url('../fonts/jd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jd-webfont.woff2') format('woff2'),
+         url('../fonts/jd-webfont.woff') format('woff'),
+         url('../fonts/jd-webfont.ttf') format('truetype'),
+         url('../fonts/jd-webfont.svg#jean_dewasneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+nav a, footer a {
+    color:#00dc64;
+    text-decoration:none;
+    font-size :30pt;
+    margin-right:30px;
+
+}
+
+
+#logo {
+    width:185px;
+    height:74px;
+    background: transparent url("../img/logojd.png") no-repeat scroll 0% 0%;
+    text-indent:-9999px;
+    border: 0;
+    margin: auto;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+
+li a {
+    width:200px;
+    height:20px;
+
+}
+
+nav li, footer li {
+    display : inline;
+}
+
+footer {
+    text-align:right;
+}
+
+header {
+    height:100px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+100&1+50,0+100 */
+background: -webkit-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+#soustitre {
+    text-align: center;
+}
