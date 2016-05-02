@@ -10,3 +10,6 @@ Le flexbox en css permet de créer des mises ne forme complexes :
 
 - demo / tuto : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - comatibilité : http://caniuse.com/#search=flex
+
+
+accordéon : http://www.armagost.com/zaccordion/
