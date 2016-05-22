@@ -40,7 +40,7 @@ nav a, footer a {
 }
 
 
-#logo {
+.logo {
     width:185px;
     height:74px;
     background: transparent url("../img/logojd.png") no-repeat scroll 0% 0%;
@@ -58,8 +58,6 @@ ul {
 
 li a {
     width:200px;
-    height:20px;
-
 }
 
 nav li, footer li {
@@ -67,11 +65,17 @@ nav li, footer li {
 }
 
 footer {
+    display: flex;
     text-align:right;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 header {
     height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+100&1+50,0+100 */
 background: -webkit-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
@@ -79,9 +83,46 @@ background: -o-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%
 background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 
+}
 
+
+#1 {
+  order: 4;
+}
+
+#2 {
+  order: 2;
+}
+
+#3 {
+  order: 3;
+}
+
+#4 {
+  order: 1;
+}
+
+#5 {
+  order: 5;
+}
+
+#6 {
+  order: 6;
 }
 
 #soustitre {
     text-align: center;
+    margin-top: -40px;
+    font-size: 16pt;
+}
+
+.slider-bg{
+    height:600px;
+    width: 900px;
+    background-color: red;
+    color:white;
+}
+
+ul #onglet {
+    display: block;
 }
