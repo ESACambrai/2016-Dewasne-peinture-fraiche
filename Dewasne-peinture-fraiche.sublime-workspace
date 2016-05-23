@@ -12,6 +12,18 @@
 	"buffers":
 	[
 		{
+			"file": "/Users/justine/Desktop/ESAC/loic.horellou/dewasne/dewasne-app/www/accueil.html",
+			"settings":
+			{
+				"buffer_size": 1897,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/Users/justine/Desktop/ESAC/loic.horellou/dewasne/dewasne-app/www/bio",
+			"file_size": 0,
+			"file_write_time": 131072978380000000,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -104,11 +116,40 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/Users/justine/Desktop/ESAC/loic.horellou/dewasne/dewasne-app/www/accueil.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 297.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/justine/Desktop/ESAC/loic.horellou/dewasne/dewasne-app/www/bio",
 					"semi_transient": false,
 					"settings":
 					{
