@@ -2,19 +2,39 @@
 <html>
 
 <head>
-	 <!--  /////////////////////////////// INFORMATIONS /////////////////////////////// -->
-	 <meta charset="utf-8">
-	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta name="description" content="">
-	 <meta name="author" content="">
-	 <title>Peinture Fraîche - le processus créatif de Jean Dewasne</title>
+	<!--  /////////////////////////////// INFORMATIONS /////////////////////////////// -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Peinture Fraîche - le processus créatif de Jean Dewasne</title>
 
-	 <!--  /////////////////////////////// CSS + JS /////////////////////////////// -->
-	 <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
-	 <link rel="stylesheet" href="css/basic.css">
-	 <!--[if lt IE 9]>
-	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	 <![endif]-->
+	<!--  /////////////////////////////// CSS + JS /////////////////////////////// -->
+	<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="js/jquery.zaccordion.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("pre.js").each(function(index) {
+			eval($(this).text());
+		});
+
+
+		$("#onglet ul").zAccordion({
+			slideWidth: 600,
+			width: 900,
+			height: 500,
+			timeout: 3000,
+			slideClass: "frame"
+		});
+	});
+
+
+	</script>
+	<link rel="stylesheet" href="css/basic.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body>
@@ -33,10 +53,10 @@
          </ul>
    		 </nav>
     </header>
-    
-    
-    
 
+
+
+<<<<<<< HEAD
 <!--
     <div id="content">
       <p><h3>Hello !</h3>
@@ -58,21 +78,64 @@
     </div>
 -->
 
-    
-    
-    
 
-  
-    <footer>
-    <ul>
-     <div class="menubas">
-    <li><a href="bibliotheque.html" title="">Bibliothèque</a></li>
-      <li><a href="rechercher.html" title="">Rechercher</a></li>
-      <li><a href="apropos.html" title="">à propos de l'application</a></li>
+
+    <section id="content">
+
+
+	<style type="text/css">
+        #onglet ul {list-style:none;}
+        #onglet h3 {color:#fff;font-size:24px;line-height:1;}
+        #onglet p {color:#fff;}
+        #onglet .frame-0 {background: red top left repeat;}
+        #onglet .frame-1 {background: blue top left repeat;;}
+        #onglet .frame-2 {background:green top left repeat;}
+        #onglet .frame-3 {background:yellow top left repeat;}
+        #onglet .frame-content {width:600px;padding:50px;}
+        #onglet .frame-closed .frame-content {display:none;}
+        #onglet .frame-open .frame-content {display:block;}
+      </style>
+      <div id="onglet">
+        <ul>
+          <li class="frame-0">
+            <div class="frame-content">
+              <h3>L'artiste</h3>
+              <p>Vivamus vel neque nec est hendrerit aliquet. Donec sed cursus sapien. Aenean auctor egestas turpis nec aliquam.</p>
+            </div>
+          </li>
+          <li class="frame-1">
+            <div class="frame-content">
+              <h3>Le processus</h3>
+              <p>Proin sit amet massa vel elit pulvinar hendrerit eu nec odio. Maecenas faucibus odio sit amet nunc semper accumsan.</p>
+            </div>
+          </li>
+          <li class="frame-2">
+            <div class="frame-content">
+              <h3>L'atelier</h3>
+              <p>Nunc porta commodo dolor, in vestibulum neque ullamcorper non. Nunc elementum ante in metus mollis sit amet consequat justo facilisis.</p>
+            </div>
+          </li>
+          <li class="frame-3">
+            <div class="frame-content">
+              <h3>Sed a scelerisque lorem</h3>
+              <p>Phasellus non ante in lectus eleifend scelerisque ut eget velit.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-    </ul>
+    </section>
+
+
+    <footer><ul>
+		<ul>
+			<div class="menubas">
+				<li><a href="bibliotheque.html" title="">Bibliothèque</a></li>
+				<li><a href="rechercher.html" title="">Rechercher</a></li>
+				<li><a href="apropos.html" title="">à propos de l'application</a></li>
+			</div>
+		</ul>
     </footer>
-  </div>   
+  </div>
 </body>
 
 </html>

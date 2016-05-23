@@ -19,6 +19,7 @@ body {
     font-size:18px;
     margin:0px;
     padding:0px;
+    color:blue;
 }
 
 @font-face {
@@ -40,9 +41,8 @@ div a, footer a {
     font-size :30pt;
     margin-right:30px;
 /*    display: inline-block;*/
-    
-
 }
+
 
 
 #logo {
@@ -61,8 +61,6 @@ ul {
 
 li a {
     width:200px;
-    height:20px;
-
 }
 
 nav li, footer li {
@@ -70,30 +68,51 @@ nav li, footer li {
 }
 
 footer {
-    text-align:right;
     position: fixed;
     height:120px;
     bottom: 0;
     width: 100%;
-background: -webkit-linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%);
-background: -o-linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%);
-background: linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    background: -webkit-linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%);
+    background: -o-linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%);
+    background: linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 header {
     height:120px;
-position: fixed;
+    position: fixed;
     width: 100%;
     top: 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+100&1+50,0+100 */
-background: -webkit-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-background: -o-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
-
+    background: -webkit-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
+
+
+/*#1 {
+  order: 4;
+}
+
+#2 {
+  order: 2;
+}
+
+#3 {
+  order: 3;
+}
+
+#4 {
+  order: 1;
+}
+
+#5 {
+  order: 5;
+}
+
+#6 {
+  order: 6;
+}*/
 
 #soustitre {
     text-align: center;
@@ -118,10 +137,11 @@ line-height: 1.35;
 }
 
 .imgbio {
-width: 40%;
-height: auto;
-display: block;
-margin: auto;}
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
 
 .menuhaut {
    position: relative;
@@ -134,7 +154,6 @@ margin: auto;}
 
 #logopartenaires{
     width: 500px;
-    
 }
 
 #esac {
@@ -150,11 +169,85 @@ margin: auto;}
 #musee {
     width: 300px;
     display: inline-block;
-    
 }
 
 .oeuvredansgallerie{
     margin: auto;
-width: 300px;
-height: auto;}
+    width: 300px;
+    height: auto;
+}
 
+
+.slider-bg{
+    height:600px;
+    width: 900px;
+    background-color: red;
+    color:white;
+}
+
+ul #onglet {
+    display: block;
+}
+
+.jeu #content {
+        display: flex;
+}
+
+#img-jeu {
+    background:url("../img/img-jeu.jpg") no-repeat left top scroll;
+    height:560px;
+    width:1250px;
+    left:0;
+    top: 0;
+    float:left;
+    margin-left:30px;
+}
+
+.carre{
+    height:100px;
+    width: 100px;
+    border:6px solid blue;
+    align-items: flex-end;
+    background-color: white;
+    float:left;
+    margin:10px;
+}
+
+.rond{
+    height:50px;
+    width: 50px;
+    border:6px solid blue;
+    align-items: flex-end;
+    border-radius: 50px;
+    background-color: white;
+    margin:10px;
+
+}
+
+.champ #recherche {
+        border:6px solid #00dc64;
+        background-color: white;
+        width:70%;
+        height:30px;
+        font-size: 20pt;
+        margin:auto;
+        color:blue;
+        padding: 12px 20px;
+}
+
+.grand-h2 {
+    font-size:30pt;
+}
+
+#recherche {
+    text-align: center;
+}
+
+#formes, #couleurs {
+    float:right;
+    margin: 0px 20px 0px 20px;
+}
+
+#content h2 {
+    text-align: center;
+}
