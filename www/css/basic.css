@@ -7,6 +7,18 @@ content, header, section, footer, aside, nav, article, figure, audio, video, can
 
 
 
+@font-face {
+    font-family: 'jean_dewasneregular';
+    src: url('../fonts/jd-webfont.eot');
+    src: url('../fonts/jd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jd-webfont.woff2') format('woff2'),
+         url('../fonts/jd-webfont.woff') format('woff'),
+         url('../fonts/jd-webfont.ttf') format('truetype'),
+         url('../fonts/jd-webfont.svg#jean_dewasneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
 
@@ -22,18 +34,6 @@ body {
     color:blue;
 }
 
-@font-face {
-    font-family: 'jean_dewasneregular';
-    src: url('../fonts/jd-webfont.eot');
-    src: url('../fonts/jd-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/jd-webfont.woff2') format('woff2'),
-         url('../fonts/jd-webfont.woff') format('woff'),
-         url('../fonts/jd-webfont.ttf') format('truetype'),
-         url('../fonts/jd-webfont.svg#jean_dewasneregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 div a, footer a {
     color:#00dc64;
@@ -145,8 +145,8 @@ font-size: 40px;}
     margin: auto;
     width: 80%;
     margin-bottom: 130px;
-    margin-top: 130px;
-line-height: 1.35;
+    padding-top: 130px;
+    line-height: 1.35;
 }
 
 p {
@@ -163,7 +163,9 @@ line-height: 1.35;
 
 .menuhaut {
    position: relative;
-    bottom: 50px;}
+    top: -150px;
+    left:5px;
+}
 
 .menubas {
     position: relative;
