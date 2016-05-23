@@ -3,7 +3,10 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-header, section, footer, aside, nav, article, figure, audio, video, canvas  { display:block; }
+content, header, section, footer, aside, nav, article, figure, audio, video, canvas  { display:block; }
+
+
+
 
 body {
 
@@ -31,22 +34,22 @@ body {
 
 }
 
-nav a, footer a {
+div a, footer a {
     color:#00dc64;
     text-decoration:none;
     font-size :30pt;
     margin-right:30px;
+/*    display: inline-block;*/
+    
 
 }
 
 
 #logo {
-    width:185px;
-    height:74px;
-    background: transparent url("../img/logojd.png") no-repeat scroll 0% 0%;
-    text-indent:-9999px;
-    border: 0;
+    width:140px;
+    height:auto;
     margin: auto;
+    display: block;
 }
 
 
@@ -68,11 +71,21 @@ nav li, footer li {
 
 footer {
     text-align:right;
+    position: fixed;
+    height:120px;
+    bottom: 0;
+    width: 100%;
+background: -webkit-linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%);
+background: -o-linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%);
+background: linear-gradient(rgba(255,255,255,0) 25%, rgba(255,255,255,1) 55%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 header {
-    height:100px;
-
+    height:120px;
+position: fixed;
+    width: 100%;
+    top: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+100&1+50,0+100 */
 background: -webkit-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
 background: -o-linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
@@ -84,4 +97,64 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #soustitre {
     text-align: center;
+    margin-top: -2%;
 }
+
+h1 {
+font-size: 40px;}
+
+#contenu {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 130px;
+    margin-top: 130px;
+line-height: 1.35;
+}
+
+p {
+font-size: 30px;
+line-height: 1.35;
+}
+
+.imgbio {
+width: 40%;
+height: auto;
+display: block;
+margin: auto;}
+
+.menuhaut {
+   position: relative;
+    bottom: 50px;}
+
+.menubas {
+    position: relative;
+    bottom: -40px;
+}
+
+#logopartenaires{
+    width: 500px;
+    
+}
+
+#esac {
+    width: auto;
+    height: 90px;
+    margin-top: -20px;
+    position: relative;
+    top: -16px;
+    left: -10px;
+    display: inline-block;
+}
+
+#musee {
+    width: 300px;
+    display: inline-block;
+    
+}
+
+.oeuvredansgallerie{
+    margin: auto;
+width: 300px;
+height: auto;}
+
