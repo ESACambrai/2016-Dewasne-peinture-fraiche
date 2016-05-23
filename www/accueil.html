@@ -7,10 +7,30 @@
 	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	 <meta name="description" content="">
 	 <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	 <title>Peinture Fraîche - le processus créatif de Jean Dewasne</title>
 
 	 <!--  /////////////////////////////// CSS + JS /////////////////////////////// -->
 	 <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+   <script type="text/javascript" src="js/jquery.zaccordion.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+        $("pre.js").each(function(index) {
+          eval($(this).text());
+        });
+      });
+
+      $(document).ready(function() {
+  $("#onglet ul").zAccordion({
+    slideWidth: 600,
+    width: 900,
+    height: 500,
+    timeout: 3000,
+    slideClass: "frame"
+  });
+});
+
+    </script>
 	 <link rel="stylesheet" href="css/basic.css">
 	 <!--[if lt IE 9]>
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,43 +40,68 @@
 <body>
   <div id="wrapper">
     <header>
-       <h1 id="logo"><a href="" title="Peinture Fraîche - le processus créatif de Jean Dewasne">Peinture Fraîche</a></h1>
-      <h2 id="soustitre">le processus créatif de Jean Dewasne</h2>
+       <div id="3"><h1 class="logo"><a href="accueil.html" title="Peinture Fraîche - le processus créatif de Jean Dewasne">Peinture Fraîche</a></h1>
+      <h2 id="soustitre">Le processus créatif de Jean Dewasne</h2></div>
          <nav>
          <ul>
-     		   <li><a href="" title="">l'artiste</a></li>
-     		   <li><a href="" title="">le processus</a></li>
-     		   <li><a href="" title="">l'atelier</a></li>
-     		   <li><a href="" title="">la releve</a></li>
-     		   <li><a href="" title="">bonus</a></li>
+     		   <li id="1"><a href="" title="">l'artiste</a></li>
+     		   <li id="2"><a href="" title="">le processus</a></li>
+     		   <li id="4"><a href="" title="">l'atelier</a></li>
+     		   <li id="5"><a href="" title="">la releve</a></li>
+     		   <li id="6"><a href="jeu.html" title="">bonus</a></li>
          </ul>
    		 </nav>
     </header>
 
     <section id="content">
-      <article>
-      <p><h3>Hello !</h3>
-      Lorem ipsum dolor sit amet.
-      <br />
-      Lorem ipsum dolor sit amet.
-      <br />
-      Lorem ipsum dolor sit amet.
-      <br />
-      Lorem ipsum dolor sit amet.
-      <br />
-      Lorem ipsum dolor sit amet.
-      <br />
-      Lorem ipsum dolor sit amet.
-      <br />
-      Lorem ipsum dolor sit amet.
-      <br />
-      Lorem ipsum dolor sit amet.</p>
-      </article>
+
+
+<style type="text/css">
+        #onglet ul {list-style:none;}
+        #onglet h3 {color:#fff;font-size:24px;line-height:1;}
+        #onglet p {color:#fff;}
+        #onglet .frame-0 {background: red top left repeat;}
+        #onglet .frame-1 {background: blue top left repeat;;}
+        #onglet .frame-2 {background:green top left repeat;}
+        #onglet .frame-3 {background:yellow top left repeat;}
+        #onglet .frame-content {width:600px;padding:50px;}
+        #onglet .frame-closed .frame-content {display:none;}
+        #onglet .frame-open .frame-content {display:block;}
+      </style>
+      <div id="onglet">
+        <ul>
+          <li class="frame-0">
+            <div class="frame-content">
+              <h3>L'artiste</h3>
+              <p>Vivamus vel neque nec est hendrerit aliquet. Donec sed cursus sapien. Aenean auctor egestas turpis nec aliquam.</p>
+            </div>
+          </li>
+          <li class="frame-1">
+            <div class="frame-content">
+              <h3>Le processus</h3>
+              <p>Proin sit amet massa vel elit pulvinar hendrerit eu nec odio. Maecenas faucibus odio sit amet nunc semper accumsan.</p>
+            </div>
+          </li>
+          <li class="frame-2">
+            <div class="frame-content">
+              <h3>L'atelier</h3>
+              <p>Nunc porta commodo dolor, in vestibulum neque ullamcorper non. Nunc elementum ante in metus mollis sit amet consequat justo facilisis.</p>
+            </div>
+          </li>
+          <li class="frame-3">
+            <div class="frame-content">
+              <h3>Sed a scelerisque lorem</h3>
+              <p>Phasellus non ante in lectus eleifend scelerisque ut eget velit.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
+     
     <footer>
     <ul>
-      <li><a href="" title="">Rechercher</a></li>
+      <li><a href="recherche.html" title="">Rechercher</a></li>
       <li><a href="" title="">à propos de l'application</a></li>
     </ul>
     </footer>
